@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+.wall{
+    border: solid 2px red;
+}
