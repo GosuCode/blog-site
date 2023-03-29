@@ -17,7 +17,7 @@ const Cards = ({ title, description, image, author }) => {
           {/* dangerouslySetInnerHTML used to implement tag */}
           <div className='flex'>
             <div className='rounded-full w-12 bg-cyan-600 mr-[10px]'></div>
-            <div><strong>{author}</strong><br />
+            <div><strong>Alember Shreesh</strong><br />
               <span>CEO and Founder</span></div>
           </div>
         </div>

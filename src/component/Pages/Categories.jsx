@@ -1,8 +1,10 @@
 import React from 'react'
 
-const Categories = () => {
+const Categories = ({ image }) => {
     return (
-        <div>Categories</div>
+        <div>
+            {image}
+        </div>
     )
 }
 
