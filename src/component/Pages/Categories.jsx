@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Categories = ({ image }) => {
+const Categories = () => {
     return (
         <div>
-            {image}
+
         </div>
     )
 }

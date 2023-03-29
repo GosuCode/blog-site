@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import Body from '../../component/post/Body'
 import axios from 'axios'
-import Categories from '../../component/Pages/Categories'
+import Cards from '../../component/post/Cards'
+// import Categories from '../../component/Pages/Categories'
 const MainBody = () => {
   const [data, setData] = useState([
 
@@ -32,19 +32,20 @@ const MainBody = () => {
         data.map((val, i) => {
           console.log(val.image)
           return (
-            <Body key={i} image={val.image[0].path} title={val.title} description={val.description} author={val.author_name} />
+            <Cards key={i} image={val.image[0].path} title={val.title} description={val.description} />
           )
         })
       }
 
-      {
+
+      {/* {
         data.map((val, i) => {
           console.log(val.image)
           return (
             <Categories key={i} image={val.image[0].path} title={val.title} description={val.description} author={val.author_name} />
           )
         })
-      }
+      } */}
 
     </div>
   )

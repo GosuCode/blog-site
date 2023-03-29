@@ -1,6 +1,6 @@
 import { AiOutlineTwitter, AiOutlineInstagram } from 'react-icons/ai'
 import { FaFacebookF } from 'react-icons/fa'
-import Sidebar2 from './Sidebar2'
+import Sidebar from './Sidebar'
 
 const Navbar = () => {
   return (
@@ -17,7 +17,7 @@ const Navbar = () => {
           <div className='py-[5px] px-[12px]'><FaFacebookF /></div>
           <div className='py-[5px] px-[12px]'><AiOutlineInstagram /></div>
         </div>
-        <div className='ml-16'><Sidebar2 /> </div>
+        <div className='ml-16'><Sidebar /> </div>
       </div>
     </div>
   )

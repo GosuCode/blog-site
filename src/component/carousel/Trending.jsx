@@ -63,17 +63,6 @@ const Trending = () => {
                 })}
             </Carousel>
         </div>
-        // <Carousel className='bg-blue-200 col-start-2 col-span-10'>
-        //     <Carousel.Item interval={1500}>
-        //         <div className='h-48'>hello3</div>
-        //     </Carousel.Item>
-        //     <Carousel.Item interval={1500}>
-        //         <div className='h-48'>hello2</div>
-        //     </Carousel.Item>
-        //     <Carousel.Item interval={1500}>
-        //         <div className='h-48'>hello</div>
-        //     </Carousel.Item>
-        // </Carousel>
     );
 }
 
