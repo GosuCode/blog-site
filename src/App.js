@@ -1,15 +1,28 @@
-import MainBody from './component/body/MainBody';
-import Carousel from './component/carousel/Carousel';
-import Navbar from './component/Navbar/Navbar';
-import Posts from './component/posts/Posts';
+import { BrowserRouter as Router, Route, Routes, } from "react-router-dom";
+import Business from "./component/Pages/Business";
+import Categories from "./component/Pages/Categories";
+import Food from "./component/Pages/Food";
+import Home from "./component/Pages/Home";
+import Technology from "./component/Pages/Technology";
+import Travel from "./component/Pages/Travel";
+import Layout from "./Hoc/Navigation/Layout";
 
 function App() {
   return (
     <>
-    <Navbar/>
-    <Carousel/>
-    <MainBody/>
-    <Posts/>
+    <Router>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/categories" element={<Categories/>}/>
+          <Route path="/travel" element={<Travel/>}/>
+          <Route path="/food" element={<Food/>}/>
+          <Route path="/technology" element={<Technology/>}/>
+          <Route path="/business" element={<Business/>}/>
+        </Routes>
+      </Layout>
+    </Router>
+
     </>
   );
 }
