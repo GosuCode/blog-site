@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Body from './Body'
+import Body from '../../component/post/Body'
 import axios from 'axios'
 const MainBody = () => {
   const [data, setData] = useState([
@@ -31,7 +31,7 @@ const MainBody = () => {
         data.map((val, i) => {
           console.log(val.image)
           return (
-            <Body key={i} image={val.image[0].path} title={val.title} description={val.description} />
+            <Body key={i} image={val.image[0].path} title={val.title} description={val.description} author={val.author_name} />
           )
         })
       }

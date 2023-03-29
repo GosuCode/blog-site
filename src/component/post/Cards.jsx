@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Body = ({ title, description, image }) => {
+const Cards = ({ title, description, image, author }) => {
   return (
     <div className='flex w-full shadow-sm hover:shadow-lg group overflow-clip shadow-gray-300 border border-gray-300'>
       <div className='w-full'>
@@ -14,10 +14,10 @@ const Body = ({ title, description, image }) => {
           <div className='mb-1'><span>Business, Travel</span> <span>- July 2, 2023</span></div>
           <h2 className='mb-4'>{title}</h2>
           <div className='mb-4 line-clamp-3' dangerouslySetInnerHTML={{ __html: description }} />
-          {/* https://blog.logrocket.com/using-dangerouslysetinnerhtml-in-a-react-application/ */}
+          {/* dangerouslySetInnerHTML used to implement tag */}
           <div className='flex'>
             <div className='rounded-full w-12 bg-cyan-600 mr-[10px]'></div>
-            <div><strong>author_name</strong><br />
+            <div><strong>{author}</strong><br />
               <span>CEO and Founder</span></div>
           </div>
         </div>
@@ -26,4 +26,4 @@ const Body = ({ title, description, image }) => {
   )
 }
 
-export default Body
+export default Cards
