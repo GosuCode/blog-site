@@ -1,11 +1,14 @@
-import React from 'react'
+import VerticalCards from '../VerticalCards/VerticalCards'
 
-const Categories = () => {
+const MostPopular = () => {
+
     return (
-        <div>
-
+        <div className='w-11/12 mx-auto gap-2 mt-8'>
+            <h3 className='text-[#999]'>CATEGORIES</h3>
+            <h2 className='text-4xl font-bold'>'Business'</h2>
+            <VerticalCards />
         </div>
     )
 }
 
-export default Categories
+export default MostPopular

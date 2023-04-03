@@ -1,37 +1,11 @@
 import React, { useState } from 'react'
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
+import { SidebarData } from './SidebarData'
 
 const Sidebar = () => {
     const [sideNav, setSideNav] = useState(false)
     const handleSideNav = () => setSideNav(!sideNav)
-
-    const SidebarData = [
-        {
-            Name: "home",
-            path: '/'
-        },
-        {
-            Name: "categories",
-            path: "/categories"
-        },
-        {
-            Name: "travel",
-            path: "/travel"
-        },
-        {
-            Name: "food",
-            path: "/food"
-        },
-        {
-            Name: "technology",
-            path: "/technology"
-        },
-        {
-            Name: "business",
-            path: "/business"
-        }
-    ]
 
     return (
         <div className=''>

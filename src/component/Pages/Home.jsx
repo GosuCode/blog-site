@@ -1,18 +1,37 @@
 import React from 'react'
-import Cards2 from '../../component/post/Cards2'
+import Cards from '../../component/post/Cards'
 import Trending from '../../component/carousel/Trending'
+import Newsletter from '../newsletter/Newsletter'
 
 const Home = () => {
     return (
         <div>
+            <div className='grid grid-cols-3'>
+                <h2 className='text-4xl font-bold my-12 col-start-2 text-center'>Trending</h2>
+            </div>
             <div className=' grid grid-cols-12'>
-                <h2 className='text-4xl font-bold my-12 col-start-6'>Trending</h2>
                 <Trending />
             </div>
-            <div><Cards2 /></div>
-            <div className=' grid grid-cols-12'>
-                <h2 className='text-4xl font-bold mt-12 col-start-5 col-span-4'>Most Popular Post</h2>
+
+            <div><Cards /></div>
+
+            <div className='grid grid-cols-3'>
+                <h2 className='text-4xl font-bold my-12 col-start-2 text-center'>Most Popular Post</h2>
             </div>
+
+            <div className='mt-28 w-11/12 grid grid-cols-12'>
+                <Trending />
+            </div>
+
+            {/* <div className='mt-28 grid grid-cols-12'>
+                <div className='text-4xl col-start-2 col-span-5'>
+                    <h2>Sports</h2>
+                </div>
+                <div className='text-4xl col-start-7 col-span-5'>
+                    <h2>Business</h2>
+                </div>
+            </div> */}
+            <Newsletter />
         </div>
     )
 }

@@ -1,28 +1,13 @@
 import React, { useEffect, useState } from 'react'
-import axios from 'axios'
 import Cards from '../../component/post/Cards'
-// import Categories from '../../component/Pages/Categories'
+import { getBlog } from './Axios'
+
 const MainBody = () => {
-  const [data, setData] = useState([
-
-  ])
-
-  const GetBlog = async () => {
-    try {
-      await axios.get('https://kalikablog.onrender.com/blog').then(res => {
-        if (res.status === 200) {
-          setData(res.data.data)
-        }
-      }).catch(err => {
-        console.log(err);
-      })
-    } catch (error) {
-      console.log(error);
-    }
-  }
+  const [data, setData] = useState([])
 
   useEffect(() => {
-    GetBlog();
+    let data = getBlog();
+    setData(data);
   }, [])
 
   return (
@@ -36,16 +21,6 @@ const MainBody = () => {
           )
         })
       }
-
-
-      {/* {
-        data.map((val, i) => {
-          console.log(val.image)
-          return (
-            <Categories key={i} image={val.image[0].path} title={val.title} description={val.description} author={val.author_name} />
-          )
-        })
-      } */}
 
     </div>
   )

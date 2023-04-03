@@ -6,6 +6,7 @@ import Home from "./component/Pages/Home";
 import Technology from "./component/Pages/Technology";
 import Travel from "./component/Pages/Travel";
 import Layout from "./Hoc/Navigation/Layout";
+import ViewMore from "./component/ReadMore/ViewMore";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/food" element={<Food/>}/>
           <Route path="/technology" element={<Technology/>}/>
           <Route path="/business" element={<Business/>}/>
+          <Route path="/viewmore/:id" element={<ViewMore/>}/>
         </Routes>
       </Layout>
     </Router>

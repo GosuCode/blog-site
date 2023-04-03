@@ -32,7 +32,7 @@ const Trending = () => {
                     return (
                         <Carousel.Item key={i} className="h-96">
                             <div className="grid grid-cols-2">
-                                <div className="h-[385px] mr-10 rounded-md bg-green-500 col-span-1"
+                                <div className="h-[385px] w-[500px] rounded-md bg-green-500 col-span-1 cursor-pointer"
                                     style={{
                                         backgroundImage: `url(${val.image[0].path})`,
                                         backgroundSize: "cover",
@@ -41,15 +41,20 @@ const Trending = () => {
                                 <div className="col-start-2">
                                     <div className='pt-12'>
                                         <div className='mb-4'>
-                                            <span className='font-bold'>{val.sub_title}</span>
+                                            <span className='font-bold'>{val.title}</span>
                                             <span className='text-[#999]'>- {val.date}</span>
                                         </div>
-                                        <p className='text-[40px] font-bold'>{val.title}</p>
+                                        <p className='text-[36px] font-bold'>{val.sub_title}</p>
                                         <p className='mb-4 text-[#999] line-clamp-3'>
                                             {val.description}
                                         </p>
                                         <div className='flex'>
-                                            <div className='rounded-full w-12 bg-fuchsia-600 mr-[10px]'></div>
+                                            <div className='rounded-full w-12 bg-fuchsia-600 mr-[10px]'
+                                                style={{
+                                                    backgroundImage: `url(${val.image[0].path})`,
+                                                    backgroundSize: "cover",
+                                                    backgroundPosition: "center"
+                                                }}></div>
                                             <div><strong>Alember Shreesh</strong><br />
                                                 <span className='text-[#999]'>CEO and Founder</span></div>
                                         </div>
