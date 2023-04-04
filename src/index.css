@@ -98,7 +98,7 @@
 }
 
 .carousel-control-next,
-.carousel-control-prev {
+.carousel-control-prev {              /* next and previous button */
     position: absolute;
     top: 0;
     bottom: 0;
@@ -116,13 +116,13 @@
     transition: opacity .15s ease
 }
 
-@media (prefers-reduced-motion:reduce) {
+/* @media (prefers-reduced-motion:reduce) {
 
     .carousel-control-next,
     .carousel-control-prev {
         transition: none
     }
-}
+} */
 
 .carousel-control-next:focus,
 .carousel-control-next:hover,
@@ -168,51 +168,30 @@
     list-style: none
 }
 
-.carousel-indicators [data-bs-target] {
+.carousel-indicators [data-bs-target] {           /* For indexing */
     box-sizing: content-box;
     flex: 0 1 auto;
-    width: 30px;
-    height: 3px;
+    width: 5px;
+    height: 5px;
     padding: 0;
     margin-right: 3px;
     margin-left: 3px;
     text-indent: -999px;
     cursor: pointer;
-    background-color: #fff;
+    background-color: #f79918;
     background-clip: padding-box;
     border: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    opacity: .5;
+    border-radius: 50%;
+    opacity: .3;
     transition: opacity .6s ease
 }
 
-@media (prefers-reduced-motion:reduce) {
+/* @media (prefers-reduced-motion:reduce) {
     .carousel-indicators [data-bs-target] {
         transition: none
     }
-}
+} */
 
 .carousel-indicators .active {
     opacity: 1
-}
-
-.carousel-caption {
-    position: absolute;
-    right: 15%;
-    bottom: 1.25rem;
-    left: 15%;
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-    color: #000;
-    text-align: center
-}
-
-
-.carousel-dark .carousel-indicators [data-bs-target] {
-    background-color: #000
-}
-
-.carousel-dark .carousel-caption {
-    color: #000
 }

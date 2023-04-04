@@ -15,11 +15,11 @@ const Newsletter = () => {
         </div>
       </div>
       <div className='py-20'>
-        <div className='flex justify-center'>
-          <div><FaFacebookF /></div>
-          <div><BsTwitter /></div>
-          <div><FaLinkedinIn /></div>
-          <div><BsYoutube /></div>
+        <div className='flex justify-center gap-2'>
+          <div className='bg-[#ccc] py-[5px] px-[10px] h-10 w-10 rounded-2xl grid items-center cursor-pointer hover:text-white hover:bg-[#f79918]'><FaFacebookF /></div>
+          <div className='bg-[#ccc] py-[5px] px-[10px] h-10 w-10 rounded-2xl grid items-center cursor-pointer hover:text-white hover:bg-[#f79918]'><BsTwitter /></div>
+          <div className='bg-[#ccc] py-[5px] px-[10px] h-10 w-10 rounded-2xl grid items-center cursor-pointer hover:text-white hover:bg-[#f79918]'><FaLinkedinIn /></div>
+          <div className='bg-[#ccc] py-[5px] px-[10px] h-10 w-10 rounded-2xl grid items-center cursor-pointer hover:text-white hover:bg-[#f79918]'><BsYoutube /></div>
         </div>
 
         <p>Copyright ©2023 All rights reserved | This template is made with &hearts; by Colorlib</p>
