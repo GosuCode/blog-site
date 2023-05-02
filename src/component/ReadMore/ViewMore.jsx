@@ -20,7 +20,7 @@ const ViewMore = () => {
 
     useEffect(() => {
         getSingleData()
-    }, [])
+    })
 
     return (
         <div>

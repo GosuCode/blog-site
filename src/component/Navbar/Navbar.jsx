@@ -4,11 +4,11 @@ import Sidebar from './Sidebar'
 import { Link } from 'react-router-dom'
 const Navbar = () => {
   return (
-    <div className='flex justify-between py-5 w-full border-solid border-b-0 shadow-md border-[#6c757d]'>
+    <div className='flex justify-between py-5 border-solid border-b-0 shadow-md border-[#6c757d]'>
 
       <div className='px-[12px]'>
         <input placeholder='Search...'
-          className='focus:outline-none w-[300px] border-solid border-2
+          className='focus:outline-none w-[300px] border-solid border-2 hidden sm:block
             border-[#ccc] rounded-[30px] h-[38px] px-[40px]'/>
       </div>
       <div className='font-bold font-sans w-full text-center px-[12px]'><Link to={"/"}>MAGDESIGN</Link></div>

@@ -26,7 +26,6 @@ const Cards = () => {
     }, [])
     return (
         <div className='grid grid-cols-3 w-11/12 mx-auto gap-2 pt-28'>
-            {console.log('working?')}
             {
                 data.map((val, i) => {
                     return <div key={i}>
